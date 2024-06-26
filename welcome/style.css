@@ -1,0 +1,85 @@
+/* Reset basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('build.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(134, 174, 216, 0.3); /* Semi-transparent background color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 120px;
+    border-radius: 50%; /* Make the image circular */
+    opacity: 0.8; /* Adjust opacity */
+}
+
+header h1 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.welcome-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 50px; /* Increased padding for larger welcome section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 50px auto; /* Increased margin for spacing */
+    max-width: 800px; /* Increased max-width for larger section */
+}
+
+.welcome-section h2 {
+    font-size: 28px; /* Adjusted font size for heading */
+    margin-bottom: 20px; /* Increased margin bottom for spacing */
+}
+
+.welcome-section p {
+    font-size: 18px; /* Adjusted font size for paragraphs */
+    line-height: 1.8;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #307bcb;
+    color: #fff;
+    padding: 12px 24px; /* Increased padding for larger button */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; /* Adjusted margin-top for button */
+}
+
+.btn:hover {
+    background-color: #85afdd;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

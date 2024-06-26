@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to EduBotX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo image -->
+            <img src="logo.png" alt="EduBotX Logo" class="logo">
+            <h1>Welcome to <span class="highlight">EduBotX</span></h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Greetings, Learner! <span class="typewriter" id="typewriter"></span></h2>
+            <p>Welcome to EduBotX, your trusty companion in the world of knowledge.</p>
+            <p>Whether you're a student, educator, or a curious mind, we're here to assist you.</p>
+            <a href="login.html" class="btn">Get Started</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EduBotX. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for typewriter effect
+        const typewriterText = "📚 Exploring new horizons...";
+        let charIndex = 0;
+        function typeWriter() {
+            if (charIndex < typewriterText.length) {
+                document.getElementById("typewriter").innerHTML += typewriterText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 100); // Adjust typing speed (milliseconds)
+            }
+        }
+        window.onload = function() {
+            typeWriter();
+        };
+    </script>
+</body>
+</html>
